@@ -76,12 +76,12 @@ QRShield uses Poetry to make dependency management effortless. You only need two
 
 Bash
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   poetry install   `
+Plain `   poetry install   `
 
 **2\. Start the Server**This command spins up the Uvicorn server with hot-reloading enabled.
 
 Bash
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   poetry run uvicorn app.server:app --reload   `
+Plain `   poetry run uvicorn app.server:app --reload   `
 
 **Access the App:**Open your browser and navigate to: \[http://127.0.0.1:8000\](http://127.0.0.1:8000)
