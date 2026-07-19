@@ -189,6 +189,7 @@ button:active { transform: translateY(0); }
     overflow: hidden;
     border: 1px solid var(--border-color);
     background: #000;
+    min-height: 320px;
 }
 
 .scanner-overlay {
