@@ -67,14 +67,6 @@ QRShield follows a lightweight Client-Server architecture designed for speed and
         
 5.  **Response & Rendering:** The backend aggregates the rule triggers, calculates a cumulative threat score, and returns a structured JSON report. The frontend dynamically parses this JSON and visually renders the passing/failing metrics into the premium dashboard.
     
-
-Project Structure
------------------
-
-Plaintext
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   QRShield/  ├── poetry.lock                   # Poetry lockfile for exact dependencies  ├── pyproject.toml                # Project metadata and dependencies  └── app/      ├── __init__.py                     ├── server.py                 # FastAPI application and routing      ├── rule_engine.py            # Core threat calculation logic      ├── payload_detector.py       # Input categorization (URL/UPI/Text)      ├── static/      │   ├── app.js                # Frontend logic & API communication      │   └── style.css             # Premium light-theme styling      └── templates/          └── index.html            # Main application UI   `
-
 Installation & Running
 ----------------------
 
