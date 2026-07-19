@@ -1,0 +1,20 @@
+[project]
+name = "qrshield"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Achyuth",email = "achyuthrayal2@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "jinja2 (>=3.1.6,<4.0.0)",
+    "fastapi (>=0.139.2,<0.140.0)",
+    "uvicorn (>=0.51.0,<0.52.0)",
+    "python-multipart (>=0.0.32,<0.0.33)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

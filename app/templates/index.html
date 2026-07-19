@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QRShield - Threat Detection Platform</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="https://unpkg.com/html5-qrcode"></script>
+</head>
+<body>
+
+<div class="container">
+    
+    <!-- Hero Banner -->
+    <div class="hero-banner">
+        <h1><i class="fa-solid fa-shield-halved text-blue"></i> QRShield</h1>
+        <p class="subtitle">QR Code Threat Detection Platform</p>
+        
+    </div>
+
+    <div class="grid-layout">
+        <!-- Main Form Entry Controls -->
+        <div class="control-panel">
+            <div class="card">
+                <h2><i class="fa-solid fa-globe"></i> Analyze URL</h2>
+                <div class="input-group">
+                    <input type="text" id="urlInput" placeholder="Paste target URL here...">
+                    <button id="btnAnalyze" onclick="analyzeURL()">
+                        <span id="btnText"><i class="fa-solid fa-magnifying-glass"></i> Analyze</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="divider">OR</div>
+
+            <div class="card">
+                <h2><i class="fa-solid fa-camera"></i> Live Camera Scanner</h2>
+                <button id="btnCamera" onclick="toggleScanner()">
+                    <i class="fa-solid fa-video"></i> Start Camera
+                </button>
+                <div id="reader-container" class="hidden">
+                    <div id="reader"></div>
+                    <div class="scanner-overlay">
+                        <div class="scan-region-box"></div>
+                        <p class="scan-text"><span class="pulse-dot"></span> Scanning Live QR Code...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Real-time Interactive Output Area -->
+        <div id="result-placeholder" class="result-panel-empty">
+            <div class="empty-state">
+                <i class="fa-solid fa-shield-virus empty-icon"></i>
+                <h3>Awaiting Analysis Output</h3>
+                <p>Input a URL endpoint link or scan an active QR target code to compile comprehensive live security assessment reports.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="app-footer">
+    <p><strong>QRShield v1.0</strong> | Powered by FastAPI • HTML5 Camera API • Advanced Security Rule Engine</p>
+</footer>
+
+<script src="/static/app.js"></script>
+</body>
+</html>
